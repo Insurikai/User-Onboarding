@@ -13,6 +13,13 @@ const MyForm = () =>{
     );
 }
 const FormikForm = withFormik({
-    
+    mapPropsToValues({username, email, password, tos}){
+        return{
+            username: username || "",
+            email: email || "",
+            password: password || "",
+            tos: tos || false
+        }
+    }
 })(MyForm);
 export default FormikForm;
