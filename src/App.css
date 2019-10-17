@@ -23,3 +23,35 @@
 body{
   background-color: #282c34;
 }
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+.myForm{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin: 5vh auto;
+}
+input{
+  border: none;
+  padding: 5px 0;
+  padding-left: 5px;
+  width: 100%;
+}
+input::placeholder{
+  color: #707070;
+}
+.holder{
+  width: 100%;
+  margin-bottom: 2vh;
+  height: fit-content;
+  display: flex;
+}
+.error{
+  width: fit-content;
+  max-width: 100%;
+  padding: 0 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
